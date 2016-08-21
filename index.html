@@ -1,472 +1,319 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Design X Club">
-    <meta name="author" content="Ritesh Hota">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignX</title>
 
-    <title>Design X Club</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
- 
-    <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-
-    <link href="css/typetext.css" rel="stylesheet">
-
-    <style>
-        .fss-container {
-            position: static;
-            height: 120%;
-            width: 100%;
-            margin-top: -50px;
-        }
-    </style>
-
-    <style>
-        .milestones {
-            margin-top: 40px;
-        }
-
-        .milestones .item {
-            text-align: center;
-        }
-
-        @media (max-width: 992px) {
-            .milestones .item:first-child,
-            .milestones .item:nth-child(2) {
-                margin-bottom: 60px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .milestones .item:nth-child(3) {
-                margin-bottom: 60px;
-            }
-        }
-
-        .milestones .item > .circle {
-            position: relative;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            width: 100px;
-            height: 100px;
-            background-color: #f8f8f8;
-            border-radius: 50%;
-            opacity: 0.8;
-        }
-
-        .milestones .item > .circle > i {
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            margin-top: -30px;
-            margin-left: -30px;
-            font-size: 45px;
-            text-align: center;
-        }
-
-        .milestones .item > .number {
-            font-size: 32px;
-        }
-
-        .milestones .item h4 {
-            margin-top: 5px;
-            font-size: 22px;
-            font-weight: 700;
-        }
-        .milestones .item > .timer {
-            font-size: 32px;
-        }
-    </style>
-	
-    <!-- Custom CSS-->
-    <link href="css/general.css" rel="stylesheet">
-	
-	 <!-- Owl-Carousel -->
-    <link href="css/custom.css" rel="stylesheet">
-	<link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
-	
-	<!-- Magnific Popup core CSS file -->
-	<link rel="stylesheet" href="css/magnific-popup.css"> 
-	
-	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
-	<!--[if IE 9]>
-		<script src="js/PIE_IE9.js"></script>
-	<![endif]-->
-	<!--[if lt IE 9]>
-		<script src="js/PIE_IE678.js"></script>
-	<![endif]-->
-
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-	<![endif]-->
-
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
 </head>
-
-<body id="home">
-
-	<!-- Preloader -->
-	<!--<div id="preloader">
-		<div id="status"></div>
-	</div>-->
-
-    <div class="intro-header">
-        <div class="col-xs-12 text-center abcen1" style="margin-top: 50px">
-            <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">DesignX Club</h1>
-            <!--<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">One of it&#39;s kind.</h3>-->
-            <!--<div class="element"></div>-->
-            <section class="cd-intro">
-                <h1 class="cd-headline letters type">
-                    <span>One of it&rsquo;s kind. Best </span>
-			<span class="cd-words-wrapper waiting">
-				<b class="is-visible">Design.</b>
-				<b>UI/UX.</b>
-				<b>VFX.</b>
-                <b>Animation.</b>
-			</span>
-                </h1>
-            </section>
+<body>
+<div id="fullpage">
+    <div class="section active" id="first_page">
+        <div id="child">
+            <h2 style="">Design X</h2><img src="img/logo.png" style="width: 100px">
         </div>
-        <div id="fss-container" class="fss-container">
-            <div id="fss-output" class="fss-container"></div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="section" id="second_page">
+        <div class="row fullWidth">
+            <div class="small-12 columns">
+                <h1 class="about_title">Design X ?</h1>
+                <hr class="style-eight">
+            </div>
         </div>
-        <!-- /.container -->
-        <div class="col-xs-12 text-center abcen wow fadeIn">
-            <div class="button_down ">
-                <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s" href="#about"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+        <div class="row fullWidth">
+            <div class="small-12 medium-6 large-6 columns large-centered about_content">
+                <p>DESIGN X is an exclusive club, which looks to promote modern day design concepts amongst the
+                    students.In today's world, creative design is key to the success of any product. Design X
+                    understands this and aspires to spark the creativity in everybody. We also understand that some
+                    people require guidance to discover their potential. Here, at Design X ,we'll provide expert
+                    guidance into the field of creative designing and also enable students to keep up with the current
+                    design trends.</p>
+            </div>
+            <div class="small-12 medium-6 large-6 large-centered columns " id="laptop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 517.9 297.7" style="enable-background:new 0 0 517.9 297.7" xml:space="preserve">
+                        <path id="XMLID_1_" class="laptop" d="M473.1,275.1H43.6c-6.6,0-12-5.4-12-12v-250c0-6.6,5.4-12,12-12h429.4c6.6,0,12,5.4,12,12v250,C485.1,269.7,479.7,275.1,473.1,275.1z"/>
+                        <path id="XMLID_4_" class="laptop" d="M513.9,275.5H1.5c0,0,0,22.2,37.7,22.2s216.4,0,216.4,0h8.1c0,0,178.8,0,216.4,0,s37.7-22.2,37.7-22.2H5.5"/>
+                        <rect id="XMLID_2_" x="53.9" y="23.3" class="laptop" width="411" height="232"/>
+                    </svg>
             </div>
         </div>
     </div>
-	
-	<!-- NavBar-->
-    <nav class="navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">DesignX</a>
-            </div>
-
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="menuItem"><a href="#whatis">About Us</a></li>
-                    <li class="menuItem"><a href="#useit">Events</a></li>
-                    <li class="menuItem"><a href="#milestones">Statistics</a></li>
-                    <li class="menuItem"><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-
-    <!-- About Us -->
-    <section class="bg-primary" id="about" style="background-color: #f8f8f8;padding-top: 100px;padding-bottom: 50px">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading" style="color: #34495e">About Us!</h2>
-                    <hr class="light">
-                    <p class="text-faded" style="color: #34495e;font-size: 20px">Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into electronic
-                        typesetting, remaining essentially unchanged.
-                </div>
+    <div class="section" id="third_page">
+        <div class="row fullWidth">
+            <div class="small-12 columns">
+                <h1 class="about_title">Portfolio</h1>
+                <hr class="style-eight">
             </div>
         </div>
-    </section>
-	
-	<!-- What is -->
-    <div id="whatis" class="content-section-b" style="border-top: 0">
-        <div class="container">
-            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-                <h2>What we do?</h2>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 wow fadeInDown text-center">
-                    <img class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
-                    <h3>Android</h3>
-                </div><!-- /.col-lg-4 -->
-
-                <div class="col-sm-4 wow fadeInDown text-center">
-                    <img class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
-                    <h3>Website</h3>
-                </div><!-- /.col-lg-4 -->
-
-                <div class="col-sm-4 wow fadeInDown text-center">
-                    <img class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
-                    <h3>UI/UX</h3>
+        <div class="row fullWidth">
+            <div class="small-12 medium-4 large-4 columns boxes">
+                <div class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                        <line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+                        <line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+                    </svg>
+                    <h3>D</h3>
+                    <span>2012</span>
+                    <span>Broccoli, Asparagus, Curry</span>
                 </div>
-            </div><!-- /.row -->
-
-            <div class="row tworow">
-
-                <div class="col-sm-4  wow fadeInDown text-center">
-                    <img class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image">
-                    <h3>VFX</h3>
-                </div><!-- /.col-lg-4 -->
-
-                <div class="col-sm-4 wow fadeInDown text-center">
-                    <img class="rotate" src="img/icon/map.svg" alt="Generic placeholder image">
-                    <h3>Animation</h3>
-                </div><!-- /.col-lg-4 -->
-
-                <div class="col-sm-4 wow fadeInDown text-center">
-                    <img class="rotate" src="img/icon/browser.svg" alt="Generic placeholder image">
-                    <h3>Marketing</h3>
-                </div><!-- /.row -->
+            </div>
+            <div class="small-12 medium-4 large-4 large-centered columns boxes">
+                <div class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                        <line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+                        <line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+                    </svg>
+                    <h3>D</h3>
+                    <span>2012</span>
+                    <span>Broccoli, Asparagus, Curry</span>
+                </div>
+            </div>
+            <div class="small-12 medium-4 large-4 columns boxes">
+                <div class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                        <line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+                        <line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+                    </svg>
+                    <h3>D</h3>
+                    <span>2012</span>
+                    <span>Broccoli, Asparagus, Curry</span>
+                </div>
             </div>
         </div>
     </div>
-
-	<!-- Upcoming Events -->
-            <div id="useit" class="content-section-a">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 pull-right wow fadeInRightBig">
-                            <img class="img-responsive " src="img/ipad.png" alt="">
-                        </div>
-                        <div class="col-sm-6 wow fadeInLeftBig" data-animation-delay="200">
-                            <h3 class="section-heading">Upcoming Event</h3>
-                            <p class="lead">
-                                In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.
-                                Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur,
-                                uam non erat mirum sapientiae lorem cupido
-                                patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.In his
-                                igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.
-                                Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur,
-                                uam non erat mirum sapientiae lorem cupido
-                                patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.
-                            </p>
-                            <!--<p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a>-->
-                        </div>
-                    </div>
-                </div>
-                <!-- /.container -->
+    <div class="section" id="fourth_page">
+        <div class="row">
+            <div class="small-12 columns">
+                <h1 class="about_title">Contact Us</h1>
+                <hr class="style-eight">
             </div>
+        </div>
+        <div class="row">
+            <br><br><br>
+            <div class="small-12 columns buttons">
+                <a href="mailto:webmaster@example.com" class="button" id="contact">Contact us</a>
 
-    <!-- Statistics -->
-            <section id="milestones" class="section bg-image-yes" style="padding-top: 50px;padding-bottom: 50px">
-                <div class="container-fluid section-wrapper">
-                    <div class="section-content">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center">
-                                <h2 class="section-title">Statistics</h2><br><br>
-                            </div>
-                        </div>
-                        <div class="milestones">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-3 item">
-                                    <div class="circle">
-                                        <i class="fa fa-coffee"></i>
-                                    </div>
-                                    <span class="timer" data-from="0" data-to="100" data-speed="5000"
-                                          data-refresh-interval="50"></span>
-                                    <h4>Registrations</h4>
-                                </div>
-                                <div class="col-sm-6 col-md-3 item">
-                                    <div class="circle">
-                                        <i class="fa fa-clock-o"></i>
-                                    </div>
-                                    <span class="timer" data-from="0" data-to="100" data-speed="5000"
-                                          data-refresh-interval="50"></span>
-                                    <h4>Members</h4>
-                                </div>
-                                <div class="col-sm-6 col-md-3 item">
-                                    <div class="circle">
-                                        <i class="fa fa-code"></i>
-                                    </div>
-                                    <span class="timer" data-from="0" data-to="100" data-speed="5000"
-                                          data-refresh-interval="50"></span>
-                                    <h4>Events</h4>
-                                </div>
-                                <div class="col-sm-6 col-md-3 item">
-                                    <div class="circle">
-                                        <i class="fa fa-smile-o"></i>
-                                    </div>
-                                    <span class="timer" data-from="0" data-to="100" data-speed="5000"
-                                          data-refresh-interval="50"></span>
-                                    <h4>Projects</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-    <!-- Newsletter -->
-            <div class="content-section-c ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center white">
-                            <h2>Get Live Updates</h2>
-                        </div>
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <div class="mockup-content">
-                                <div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
-                                    <button type="button "><span>Subscribe to our Newsletter</span></button>
-                                    <div class="morph-content">
-                                        <div>
-                                            <div class="content-style-form content-style-form-4 ">
-                                                <h2 class="morph-clone">Subscribe to our Newsletter</h2>
-                                                <form>
-                                                    <p><label>Your Email Address</label><input type="text"/></p>
-                                                    <p>
-                                                        <button>Subscribe me</button>
-                                                    </p>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="row fullWidth">
+            <div class="small-6 large-3 columns boxes">
+                <div class="social">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line class="top" x1="0" y1="0" x2="300" y2="0"/>
+                            <line class="left" x1="0" y1="100" x2="0" y2="-200"/>
+                            <line class="bottom" x1="100" y1="100" x2="-200" y2="100"/>
+                            <line class="right" x1="100" y1="0" x2="100" y2="300"/>
+                        </svg>
+                        <h3>F</h3>
+                    </a>
                 </div>
             </div>
-
-	<!-- Contact -->
-            <div id="contact" class="content-section-a">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-                            <h2>Contact Us</h2>
-                        </div>
-
-                        <form role="form" action="" method="post">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="InputName">Your Name</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="InputName" id="InputName"
-                                               placeholder="Enter Name" required>
-                                        <span class="input-group-addon"><i
-                                                class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="InputEmail">Your Email</label>
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" id="InputEmail" name="InputEmail"
-                                               placeholder="Enter Email" required>
-                                        <span class="input-group-addon"><i
-                                                class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="InputMessage">Message</label>
-                                    <div class="input-group">
-                                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5"
-                                                  required></textarea>
-                                        <span class="input-group-addon"><i
-                                                class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-                                    </div>
-                                </div>
-
-                                <input type="submit" name="submit" id="submit" value="Submit"
-                                       class="btn wow tada btn-embossed btn-primary pull-right">
-                            </div>
-                        </form>
-
-                        <hr class="featurette-divider hidden-lg">
-                        <div class="col-md-5 col-md-push-1 address">
-                            <address>
-                                <h3>Location</h3>
-                                <p class="lead"><a
-                                        href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">No.1,
-                                    Jawaharlal Nehru Road,<br>
-                                    (100 feet Road, Near Vadapalani Signal),</a><br>
-                                    Vadapalani,
-                                    Chennai - 600 026.<br>
-                                </p>
-                            </address>
-
-                            <h3>Social</h3>
-                            <li class="social">
-                                <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
-                                <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a>
-                                <a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
-                            </li>
-                        </div>
-                    </div>
+            <div class="small-6 large-3 columns boxes">
+                <div class="social">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line class="top" x1="0" y1="0" x2="300" y2="0"/>
+                            <line class="left" x1="0" y1="100" x2="0" y2="-200"/>
+                            <line class="bottom" x1="100" y1="100" x2="-200" y2="100"/>
+                            <line class="right" x1="100" y1="0" x2="100" y2="300"/>
+                        </svg>
+                        <h3>T</h3>
+                    </a>
                 </div>
             </div>
-
-	<!--Footer -->
-    <footer class="text-center" style="padding: 20px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p style="color: #34495e">Copyright © DesignX Club. All Rights Reserved.</p>
+            <div class="small-6 large-3 columns boxes ">
+                <div class="social ">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line class="top" x1="0" y1="0" x2="300" y2="0"/>
+                            <line class="left" x1="0" y1="100" x2="0" y2="-200"/>
+                            <line class="bottom" x1="100" y1="100" x2="-200" y2="100"/>
+                            <line class="right" x1="100" y1="0" x2="100" y2="300"/>
+                        </svg>
+                        <h3>G+</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="small-6 large-3 columns boxes">
+                <div class="social">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line class="top" x1="0" y1="0" x2="300" y2="0"/>
+                            <line class="left" x1="0" y1="100" x2="0" y2="-200"/>
+                            <line class="bottom" x1="100" y1="100" x2="-200" y2="100"/>
+                            <line class="right" x1="100" y1="0" x2="100" y2="300"/>
+                        </svg>
+                        <h3>Gi</h3>
+                    </a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="js/foundation.min.js"></script>
+<script type="text/javascript" src="js/what-input.js"></script>
+<script type="text/javascript">
+    $(document).foundation();
 
-    <script src="js/surface-shader.js"></script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage()
+    });
 
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/count-to.js"></script>
+    // shim layer with setTimeout fallback
+    window.requestAnimFrame = (function () {
+        return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+    })();
 
-    <script type="text/javascript">
-        $('.timer').countTo();
-    </script>
 
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/script.js"></script>
-	<!-- StikyMenu -->
-	<script src="js/stickUp.min.js"></script>
-	<script type="text/javascript">
-	  jQuery(function($) {
-		$(document).ready( function() {
-		  $('.navbar-default').stickUp();
-		  
-		});
-	  });
-	
-	</script>
+    //<![CDATA[
+    window.onload = function () {
+        /**
+         *    Wave oscillators by Ken Fyrstenberg Nilsen
+         *    http://abdiassoftware.com/
+         *
+         *    CC-Attribute 3.0 License
+         */
+        var ctx = canvas.getContext('2d'),
+                w, h;
 
-    <script src="js/typetext.js"></script>
+        canvas.width = w = window.innerWidth;
+        canvas.height = h = window.innerHeight;
+        document.getElementById("canvas").style.zIndex = "5";
 
-	<!-- Smoothscroll -->
-	<script type="text/javascript" src="js/jquery.corner.js"></script> 
-	<script src="js/wow.min.js"></script>
-	<script>
-	 new WOW().init();
-	</script>
-	<script src="js/classie.js"></script>
-	<script src="js/uiMorphingButton_inflow.js"></script>
-	<!-- Magnific Popup core JS file -->
-	<script src="js/jquery.magnific-popup.js"></script>
-    <!-- Live Chat Widget powered by https://keyreply.com/chat/ -->
-    <!-- Advanced options: -->
-    <!-- data-align="left" -->
-    <!-- data-overlay="true" -->
-    <script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#03A9F4" data-apps="JTdCJTIydHdpdHRlciUyMjolMjJAcml0ZXNoX2hvdGElMjIsJTIyd2hhdHNhcHAlMjI6JTIyOTU1MTYzMTI1MiUyMiwlMjJwaG9uZSUyMjolMjI5NTUxNjMxMjUyJTIyLCUyMmZhY2Vib29rJTIyOiUyMnJpdGVzaGhvdGE5NiUyMiwlMjJlbWFpbCUyMjolMjJyaXRlc2hob3RhLjIwMDhAZ21haWwuY29tJTIyJTdE"></script>
+        var osc1 = new osc(),
+                osc2 = new osc(),
+                osc3 = new osc(),
+                horizon = h * 0.8;
+        count = 40,
+                step = Math.ceil(w / count),
+                buffer = new ArrayBuffer(count * 4),
+                points = new Float32Array(buffer);
+
+        osc1.max = 15;//h * 0.7;
+
+        osc2.max = 5;
+        osc2.speed = 0.03;
+
+        osc2.max = 5;
+        osc2.speed = 0.015;
+
+        function fill() {
+            for (var i = 0; i < count; i++) {
+                points[i] = mixer(osc1, osc2, osc3);
+            }
+        }
+
+        fill();
+        var grd = ctx.createLinearGradient(0, 800, 0, 0);
+        grd.addColorStop(0, "#ffd982");
+        grd.addColorStop(1, "#b99550");
+        ctx.lineWidth = 20;
+        ctx.strokeStyle = grd;
+        ctx.fillStyle = grd;
+
+        function loop() {
+
+            var i;
+
+            /// move points to the left
+            for (i = 0; i < count - 1; i++) {
+                points[i] = points[i + 1];
+            }
+
+            /// get a new point
+            points[count - 1] = mixer(osc1, osc2, osc3);
+
+            ctx.clearRect(0, 0, w, h);
+            //ctx.fillRect(0, 0, w, h);
+
+            /// render wave
+            ctx.beginPath();
+            ctx.moveTo(-5, points[0]);
+
+            for (i = 1; i < count; i++) {
+                ctx.lineTo(i * step, points[i]);
+            }
+
+            ctx.lineTo(w, h);
+            ctx.lineTo(-5, h);
+            ctx.lineTo(-5, points[1]);
+
+            ctx.stroke();
+            ctx.fill();
+        }
+
+/// oscillator object
+        function osc() {
+
+            this.variation = 0.4;
+            this.max = 150;
+            this.speed = 0.02;
+
+            var me = this,
+                    a = 0,
+                    max = getMax();
+
+            this.getAmp = function () {
+
+                a += this.speed;
+
+                if (a >= 2.0) {
+                    a = 0;
+                    max = getMax();
+                }
+
+                return max * Math.sin(a * Math.PI);
+            };
+
+            function getMax() {
+                return Math.random() * me.max * me.variation +
+                        me.max * (1 - me.variation);
+            }
+
+            return this;
+        }
+
+        function mixer() {
+
+            var d = arguments.length,
+                    i = d,
+                    sum = 0;
+
+            if (d < 1) return 0;
+
+            while (i--) sum += arguments[i].getAmp();
+
+            return sum / d + horizon;
+        }
+
+        (function animloop() {
+            requestAnimFrame(animloop);
+            loop();
+        })();
+
+    }; //]]>
+
+
+</script>
 </body>
 </html>
