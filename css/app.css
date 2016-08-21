@@ -5,7 +5,7 @@ body {
     padding:0;
     overflow:hidden;
     background:#232323 !important;
-    color: #ffd982 !important;;
+    color: #EAA657 !important;;
     font-family: 'Montserrat', sans-serif ;
     font-weight: 300;
 }
@@ -39,7 +39,7 @@ body {
     font-size: 70px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    color: #ffd982;
+    color: #EAA657;
 }
 /*  The About Page */
 .about_title{
@@ -47,7 +47,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 60px;
-    color: #ffd982;
+    color: #EAA657;
     margin-top: -5px;
 }
 .about_content{
@@ -57,7 +57,7 @@ body {
     text-align: justify ;
     float: left !important;
     width: 100%;
-    color: #ffd982;
+    color: #EAA657;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -66,7 +66,7 @@ body {
 .laptop{
     text-align: center;
     fill:none;
-    stroke:#ffd982;
+    stroke:#EAA657;
     stroke-width:1.5;
     stroke-miterlimit:10;
 }
@@ -78,8 +78,8 @@ body {
 /*  The Line */
 hr.style-eight {
     padding: 0;
-    border-color:#ffd982 ;
-    color: #ffd982;
+    border-color:#EAA657 ;
+    color: #EAA657;
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
@@ -87,7 +87,7 @@ hr.style-eight {
     margin-top:-2% ;
 }
 hr.style-eight:after {
-    color: #ffd982;
+    color: #EAA657;
     background: #232323;
     content: "\2022" ;
     display: inline-block;
@@ -144,7 +144,7 @@ hr.style-eight:after {
     height: 460px;
     text-align: center;
     position: relative;
-    background: #ffd982;
+    background: #EAA657;
     display: inline-block;
     margin: 0 10px;
     cursor: pointer;
@@ -181,7 +181,7 @@ hr.style-eight:after {
 }
 .box:hover h3,
 .box:hover span {
-    color: #ffd982;
+    color: #EAA657;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
@@ -192,7 +192,7 @@ hr.style-eight:after {
 }
 .box svg line {
     stroke-width: 3;
-    stroke: #ffd982;
+    stroke: #EAA657;
     fill: none;
     -webkit-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
@@ -229,13 +229,13 @@ hr.style-eight:after {
     box-shadow: inset 0 0 0 10px #232323;
 }
 .box:hover h3, .box:hover span {
-    color: #ffd982;
+    color: #EAA657;
 }
 .box svg line {
     stroke-width: 8;
 }
 .box:hover svg line {
-    stroke: #ffd982;
+    stroke: #EAA657;
 }
 /* */
 .buttons{
@@ -244,28 +244,28 @@ hr.style-eight:after {
     justify-content: center;
 }
 .button{
-    background: #ffd982;
+    background: #EAA657;
     color: #232323;
     font-size: 2rem;
     text-decoration: none;
 }
 .button:hover{
     background: #232323;
-    border-color: #ffd982;
-    color: #ffd982;
+    border-color: #EAA657;
+    color: #EAA657;
 }
 .button.active{
-    background: #ffd982 !important;
+    background: #EAA657 !important;
     color: #232323 !important;
     font-size: 2rem !important;
 }
 .button.active:hover{
     background: #232323 !important;
-    color: #ffd982 !important;
-    border-color: #ffd982 !important;
+    color: #EAA657 !important;
+    border-color: #EAA657 !important;
 }
 .button_visited {
-    background: #ffd982 !important;
+    background: #EAA657 !important;
     color: #232323 !important;
     font-size: 2rem !important;
 }
@@ -318,7 +318,7 @@ hr.style-eight:after {
     height: 100px;
     text-align: center;
     position: relative;
-    background: #ffd982;
+    background: #EAA657;
     display: inline-block;
     margin: 0 10px;
     cursor: pointer;
@@ -358,7 +358,7 @@ hr.style-eight:after {
 }
 .social:hover h3,
 .social:hover span {
-    color: #ffd982;
+    color: #EAA657;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
@@ -369,7 +369,7 @@ hr.style-eight:after {
 }
 .social svg line {
     stroke-width: 3;
-    stroke: #ffd982;
+    stroke: #EAA657;
     fill: none;
     -webkit-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
@@ -406,11 +406,11 @@ hr.style-eight:after {
     box-shadow: inset 0 0 0 10px #232323;
 }
 .social:hover h3, .social:hover span {
-    color: #ffd982;
+    color: #EAA657;
 }
 .social svg line {
     stroke-width: 8;
 }
 .social:hover svg line {
-    stroke: #ffd982;
+    stroke: #EAA657;
 }
